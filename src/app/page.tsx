@@ -1,4 +1,5 @@
 import NavLink from "@/app/components/NavLink";
+import ToogleDraftMode from "./components/ToogleDraftMode";
 
 export default function Home() {
 	
@@ -7,7 +8,7 @@ export default function Home() {
       
 				<NavLink />
 
-				<a href="/api/draft" target="_blank">Toggle Draft Mode</a>
+				<ToogleDraftMode />
       
     </main>
   );

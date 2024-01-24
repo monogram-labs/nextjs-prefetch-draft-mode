@@ -8,10 +8,10 @@ export function GET() {
 			draftMode().enable();
 		}
 
-		return NextResponse.json(
-			{ draftModeEnabled: !draftMode().isEnabled},
-			{
-				status: 200,
-			}
-		)
+		const baseUrl = process.env.VERCEL_URL
+		? `https://${process.env.VERCEL_URL}`
+		: 'http://localhost:3000'
+
+
+		return NextResponse.redirect(baseUrl)
 }
