@@ -9,7 +9,7 @@ export function GET() {
 		}
 
 		return NextResponse.json(
-			{ draftMode: draftMode().isEnabled},
+			{ draftModeEnabled: !draftMode().isEnabled},
 			{
 				status: 200,
 			}
