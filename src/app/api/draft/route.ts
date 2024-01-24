@@ -9,7 +9,7 @@ export function GET() {
 		}
 
 		const baseUrl = process.env.VERCEL_URL
-		? `https://${process.env.VERCEL_URL}`
+		? `https://nextjs-prefetch-draft-mode.vercel.app`
 		: 'http://localhost:3000'
 
 
