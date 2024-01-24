@@ -1,5 +1,3 @@
-'use client'
-
 import { draftMode } from "next/headers";
 import Link from "next/link";
 
